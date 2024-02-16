@@ -1,4 +1,24 @@
 ﻿@{
-    Layout = "_Layout";
+   //   Layout = "_Layout";
+
+    if (User.IsInRole("Bank"))
+
+    {
+        Layout = "/Views/Shared/_Bank.cshtml";
+       
+    }
+    else
+        if (User.IsInRole("Admin"))
+    {
+        Layout = "/Views/Shared/_Admin.cshtml";
+    }
+    else if (User.IsInRole("Customer"))
+    {
+        Layout = "/Views/Shared/_Customer.cshtml";
+    }
+    else
+    {
+        Layout = "/Views/Shared/_Layout.cshtml";
+    }
 
 }

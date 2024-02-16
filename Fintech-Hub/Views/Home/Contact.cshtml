@@ -1,0 +1,36 @@
+﻿@{
+    ViewBag.Title = "Contact Us";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Get In Touch</h2>
+                <p>We would love to hear from you. Please fill out the form below to contact us.</p>
+            </div>
+            <div class="col-md-6">
+                <form>
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name" required data-aos="flip-left">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email" required data-aos="flip-right">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" class="form-control" id="subject" placeholder="Enter the subject" required data-aos="flip-up">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea class="form-control" id="message" rows="5" placeholder="Write your message here" required data-aos="flip-down"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" data-aos="zoom-in-up">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
