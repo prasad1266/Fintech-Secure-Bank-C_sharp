@@ -7,7 +7,6 @@ namespace Fintech_Hub.Models
 
         public string? City { get; set; }
 
-
         public string? PhoneNumber { get; set; }
         public string? Address { get; set; }
 
@@ -19,7 +18,8 @@ namespace Fintech_Hub.Models
 
         public Bank bank { get; set; }
 
-       
+        public virtual BankAccount? BankAccount { get; set; }
+
 
 
         //public virtual Bank? Bank { get; set; }

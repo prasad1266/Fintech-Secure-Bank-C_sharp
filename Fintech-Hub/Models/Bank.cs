@@ -1,6 +1,6 @@
 ﻿namespace Fintech_Hub.Models
 {
-    public class Bank
+    public class Bank           // Branch
     {
         public int Id { get; set; }
         public string? Name { get; set; }
