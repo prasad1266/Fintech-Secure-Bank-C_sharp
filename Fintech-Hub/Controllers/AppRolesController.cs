@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Fintech_Hub.Controllers
 {
-   // [Authorize(Roles = "Admin")]
+    [Authorize(Roles = "Master")]
     public class AppRolesController : Controller
     {
         private readonly RoleManager<IdentityRole> _roleManager; 

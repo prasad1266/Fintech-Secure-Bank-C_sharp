@@ -188,7 +188,7 @@ namespace Fintech_Hub.Areas.Identity.Pages.Account
                     }
                     //else if (Input.Role == "Customer")
                     //{
-                    //    user.CustomerDetails = new CustomerEntity { Name = Input.Name, Address = Input.Address, Email = Input.Email };
+                    //    user.Customer = new CustomerEntity { Name = Input.Name, Address = Input.Address, Email = Input.Email };
                     //}
 
                     await _userManager.UpdateAsync(user);

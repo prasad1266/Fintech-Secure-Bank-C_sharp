@@ -16,6 +16,10 @@
     {
         Layout = "/Views/Shared/_Customer.cshtml";
     }
+    else if (User.IsInRole("Master"))
+    {
+        Layout = "/Views/Shared/_master.cshtml";
+    }
     else
     {
         Layout = "/Views/Shared/_Layout.cshtml";
